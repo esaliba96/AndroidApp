@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Poly.Kenner_Saliba.gradesniffer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mustang_logo_foreground"
+        android:label= "@string/app_name"
+        android:roundIcon="@mipmap/mustang_logo_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.Poly.Kenner_Saliba.gradesniffer.MainMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".GradeScheduleService"
+                 android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE"
+                 android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:name = "com.Poly.Kenner_Saliba.gradesniffer.GradeScheduler"
+                 android:permission="android.permission.BIND_JOB_SERVICE"
+                 android:exported="true"/>
+        <activity android:name="com.Poly.Kenner_Saliba.gradesniffer.LoginSaveActivity"></activity>
+        <activity android:name="com.Poly.Kenner_Saliba.gradesniffer.MainActivity"></activity>
+        <activity android:name="com.Poly.Kenner_Saliba.gradesniffer.GradeDisplay"></activity>
+    </application>
+
+</manifest>

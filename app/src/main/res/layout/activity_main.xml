@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Poly.Kenner_Saliba.gradesniffer.MainActivity">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:elevation="10dp"
+      android:background="@color/colormustanggreen"
+      android:id="@+id/bottonNavBar"
+      android:paddingTop="5dp"
+      android:orientation="horizontal"
+      android:layout_alignParentBottom="true"
+      android:foregroundGravity="bottom">
+
+  <RadioGroup
+      android:id="@+id/options"
+      android:gravity="center"
+      android:layout_height="match_parent"
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:baselineAligned="false">
+
+  <RadioButton
+      android:layout_width="match_parent"
+      android:gravity="center"
+      android:layout_height="match_parent"
+      android:text="@string/credMenu"
+      android:layout_weight="1"
+      android:button="@null"
+      android:padding="2dp"
+      android:checked="false"
+      android:textSize="15sp"
+      android:drawableTop="@drawable/ic_user_24dp"
+      android:id="@+id/user_credentials"/>
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:text="@string/courseMenu"
+        android:layout_weight="1"
+        android:button="@null"
+        android:padding="2dp"
+        android:checked="false"
+        android:textSize="15sp"
+        android:drawableTop="@drawable/ic_list_black_24dp"
+        android:id="@+id/courses"/>
+
+  </RadioGroup>
+  </LinearLayout>
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_above="@+id/bottonNavBar"
+      android:background="@color/colormustanggold">
+  </View>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/dynamicContent"
+      android:orientation="vertical"
+      android:layout_marginBottom="57dp"
+      android:background="@color/colormustanggreen"
+      android:layout_gravity="bottom">
+  </LinearLayout>
+
+</RelativeLayout>
+
+

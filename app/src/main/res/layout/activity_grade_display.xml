@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colormustanggreen"
+    tools:context="com.Poly.Kenner_Saliba.gradesniffer.MainMenu" android:orientation="horizontal">
+
+  <TextView
+      android:layout_width="130dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="10dp"
+      android:textColor="@color/colormustanggold"
+      android:textSize="22sp"
+      android:layout_marginTop="20dp"
+      android:id="@+id/grade_identifier_title"
+      android:text="@string/gradeID"/>
+
+  <TextView
+      android:layout_width="130dp"
+      android:layout_height="wrap_content"
+      android:layout_alignRight="@id/weight_title"
+      android:layout_alignLeft="@id/grade_identifier_title"
+      android:textAlignment="center"
+      android:textColor="@color/colormustanggold"
+      android:textSize="22sp"
+      android:layout_marginTop="20dp"
+      android:id="@+id/grade_percentage_title"
+      android:text="@string/gradePercentage"/>
+
+  <TextView android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colormustanggold"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/weight_title"
+            android:text="Weight"/>
+
+  <TextView
+      android:id="@+id/weightedTotal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@id/addGrade"
+      android:layout_alignStart="@+id/grade_identifier_title"
+      android:text="Weighted Grade: "
+      android:layout_marginBottom="0dp"
+      android:layout_marginTop="0dp"
+      android:textAlignment="center"
+      android:textColor="@color/colormustanggold"
+      android:textSize="25sp" />
+
+  <TextView
+      android:id="@+id/weightedTotalValue"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@id/addGrade"
+      android:layout_alignStart="@id/weight_title"
+      android:textAlignment="center"
+      android:textColor="@color/colormustanggold"
+      android:textSize="25sp"/>
+
+  <com.baoyz.swipemenulistview.SwipeMenuListView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/grade_identifier_title"
+      android:layout_centerHorizontal="true"
+      android:layout_above="@id/weightedTotal"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="5dp"
+      android:id="@+id/gradeListView"
+  />
+  <Button
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:background="@drawable/add_grade"
+      android:gravity="center_vertical|center_horizontal"
+      android:textAlignment="center"
+      android:layout_alignParentBottom="true"
+      android:textStyle="bold"
+      android:layout_marginTop="5dp"
+      android:textColor="@color/colormustanggreen"
+      android:textSize="24dp"
+      android:layout_centerHorizontal="true"
+      android:id="@+id/addGrade"
+      android:text="@string/addGrade"
+  />
+  <ProgressBar
+      style="?android:attr/progressBarStyleLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/loadingDonut"
+      android:layout_below="@id/quarterSpinner"
+      android:visibility="invisible"
+      android:layout_centerInParent="true"
+      android:progressDrawable="@drawable/circular_resource_bar"
+      android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

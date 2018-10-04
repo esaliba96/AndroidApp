@@ -1,0 +1,25 @@
+<resources>
+  <string name="app_name">Grade Sniffer</string>
+  <string name="myACCESS">accessCredentials</string>
+  <string name="courses">courses</string>
+  <string name="addGrade">+</string>
+  <string name="quarters">quarters</string>
+  <string name="uName">uNameKey</string>
+  <string name="uPass">uPassKeyCredentials</string>
+  <string name="selectedCourse">selectedCourse</string>
+  <string name="noUser">No User Registered</string>
+  <string name="gradeWeightHint">weight</string>
+  <string name="gradeWeightTitle">Enter Grade Weight: </string>
+  <string name="usernameHint">Username</string>
+  <string name="passHint">Password</string>
+  <string name="confirmCred">Confirm Credentials</string>
+  <string name="gradeID">Identifier</string>
+  <string name="gradeIdentifier">identifier</string>
+  <string name="gradePercentage">Percentage</string>
+  <string name="credMenu">credentials</string>
+  <string name="courseMenu">courses</string>
+  <string name="gradeScore">score</string>
+  <string name="gradeRange">range</string>
+  <string name="addGradePopup">Add Grade</string>
+  <string name="currentQuarter">Current Quarter</string>
+</resources>

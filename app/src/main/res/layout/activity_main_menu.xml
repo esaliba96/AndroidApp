@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colormustanggreen"
+    tools:context="com.Poly.Kenner_Saliba.gradesniffer.MainMenu" android:orientation="horizontal">
+
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:inputType="textNoSuggestions|textPersonName"
+      android:textAlignment="center"
+      android:textSize="24dp"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="33dp"
+      android:id="@+id/toUserCredentialPage"
+  />
+  <Spinner
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="100dp"
+      android:background="#FFFF"
+      android:layout_alignTop="@id/toUserCredentialPage"
+      android:id="@+id/quarterSpinner"/>
+  <ListView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignTop="@id/quarterSpinner"
+      android:layout_marginTop="100dp"
+      android:layout_alignParentStart="true"
+      android:id="@+id/classListView"/>
+
+  <ProgressBar
+      style="?android:attr/progressBarStyleLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/loadingDonut"
+      android:layout_below="@id/quarterSpinner"
+      android:visibility="invisible"
+      android:layout_centerInParent="true"
+      android:progressDrawable="@drawable/circular_resource_bar"
+      android:layout_alignRight="@+id/textView"
+      android:layout_alignEnd="@+id/textView"
+      android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
